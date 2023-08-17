@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-base-filled2d": "github:stdlib-js/array-base-filled2d#main",
+    "@stdlib/array-base-filled2d": "^0.0.1",
     "@stdlib/types": "^0.0.14"
   },
   "devDependencies": {
