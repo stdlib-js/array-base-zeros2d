@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+zeros2d = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-zeros2d/tags). For example,
+
+```javascript
 zeros2d = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@v0.1.0-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var zeros2d = require( 'path/to/vendor/umd/array-base-zeros2d/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -113,7 +118,7 @@ var out = zeros2d( [ 2, 3 ] );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gfill@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
