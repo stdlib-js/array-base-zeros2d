@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import zeros2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@deno/mod.js';
+import zeros2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@v0.1.0-deno/mod.js';
 ```
 
 #### zeros2d( shape )
@@ -86,7 +86,7 @@ var out = zeros2d( [ 2, 3 ] );
 
 ```javascript
 import gfill from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gfill@deno/mod.js';
-import zeros2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@deno/mod.js';
+import zeros2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@v0.1.0-deno/mod.js';
 
 // Create a zero-filled array:
 var arr = zeros2d( [ 5, 10 ] );
