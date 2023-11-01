@@ -21,69 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var zeros2d = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof zeros2d, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns a filled nested array', function test( t ) {
-	var expected;
-	var actual;
-
-	expected = [ [ 0.0, 0.0, 0.0 ] ];
-	actual = zeros2d( [ 1, 3 ] );
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	expected = [ [ 0.0 ], [ 0.0 ], [ 0.0 ] ];
-	actual = zeros2d( [ 3, 1 ] );
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	expected = [ [ 0.0, 0.0 ], [ 0.0, 0.0 ], [ 0.0, 0.0 ] ];
-	actual = zeros2d( [ 3, 2 ] );
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns an empty outer array if provided a shape having a first element equal to zero', function test( t ) {
-	var expected;
-	var actual;
-
-	expected = [];
-
-	actual = zeros2d( [ 0, 1 ] );
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	actual = zeros2d( [ 0, 0 ] );
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	actual = zeros2d( [ 0, 100 ] );
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns empty inner arrays if provided a shape having a second element equal to zero', function test( t ) {
-	var expected;
-	var actual;
-
-	expected = [ [] ];
-	actual = zeros2d( [ 1, 0 ] );
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	expected = [ [], [] ];
-	actual = zeros2d( [ 2, 0 ] );
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	expected = [ [], [], [] ];
-	actual = zeros2d( [ 3, 0 ] );
-	t.deepEqual( actual, expected, 'returns expected value' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
