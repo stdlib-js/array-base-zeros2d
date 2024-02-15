@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import zeros2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-zeros2d/tags). For example,
+
+```javascript
 import zeros2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@v0.2.0-esm/index.mjs';
 ```
 
@@ -91,7 +96,7 @@ var out = zeros2d( [ 2, 3 ] );
 <script type="module">
 
 import gfill from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gfill@esm/index.mjs';
-import zeros2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@v0.2.0-esm/index.mjs';
+import zeros2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros2d@esm/index.mjs';
 
 // Create a zero-filled array:
 var arr = zeros2d( [ 5, 10 ] );
